@@ -1,0 +1,27 @@
+.headers
+{
+    padding: 4.5rem;   
+    
+    .date
+    {
+        font-size:1rem;
+        line-height: 2.3rem;  
+        color:$color-primary-dark;
+    }
+    &--primary
+    {
+        .h
+        {
+    font-size:4rem;
+    line-height:4.4rem;
+        }  
+    }
+    &--secondary
+    {
+        .h
+        {
+        font-size:2rem;
+        line-height:2.6rem;
+        }
+    }
+}

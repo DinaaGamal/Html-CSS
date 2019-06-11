@@ -1,0 +1,39 @@
+.btn {
+    //    & btn--rectangular {
+    // //   }
+        padding-top: $padding-small ;
+        padding-bottom: $padding-small;
+        text-transform:uppercase;
+        font-weight: 400;
+        font-size:1.2rem;
+        margin-top: 3rem; 
+        text-decoration:none;
+        
+       
+        
+        &.btn-rounded {
+          background-color: $color-primary;
+          padding-right: $padding-large ;
+          padding-left: $padding-small *4 ;
+          border:2px solid $color-primary;
+          border-radius: 3rem;
+          color:$color-white;
+          transition: all none ease-in ;
+       
+          // margin-top:4rem;
+          
+          
+  
+        &:hover , &:active{
+            background-color:$color-secondary;
+            color:$color-primary;
+          }
+        
+         
+        }
+      }
+    
+    
+  
+  
+

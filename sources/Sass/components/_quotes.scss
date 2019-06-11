@@ -1,0 +1,140 @@
+.section{
+    background-color:$light-brown;
+    @include section-spacing;
+    .total{
+        transition: all ease 2s;
+        height: 25rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .terminal{
+        color:$color-quotes;
+        
+        h2{
+            color:$color-white;
+        }
+        p{
+            font-size:1.3rem;
+        }
+    }
+    
+}
+
+
+.quotes
+{
+    perspective: 150rem;
+    height: 24rem;
+    width: 100%;
+    position: relative;
+    
+    .quotes__side {
+        transition: all ease 2s;
+        height: 24rem;
+        width:34rem;
+        padding:30px;
+        background-color: $color-main;
+        justify-content: space-evenly;
+        margin-right: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        &--back {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(360deg);
+    }
+
+
+    .image
+    {
+        width: 6rem; 
+        height: 6rem;
+        border-radius: 50%;
+        background-origin: padding-box;
+        background-clip: padding-box;
+        background-position: center;
+        margin-bottom:10px ;
+
+        &--first
+        {
+            background-image: url(../img/zoal_2.jpg);
+        }
+        &--second
+        {
+            background-image:url(../img/zoal_3.jpg);
+        }
+        &--third{
+            background-image:url(../img/zoal_6.jpg);
+        }
+    }
+    
+    hr{
+        
+        color:$unvisible-color;
+        visibility: visible;
+        
+     }
+
+    &__header
+    {
+        width: 100%;
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+        margin:left;
+        margin:right;
+       
+
+    }
+    &__title 
+    {
+        font-family:"poopins";
+        width:100%;
+        font-size:1.7rem;
+        text-align:left;
+        line-height:2.3rem;
+
+        &--primary
+        {
+            font-weight:700;
+        font-size:2rem;
+        color:$color-white;
+        }
+        &--secondary
+        {
+            font-size: 1.2rem;
+        color:$color-quotes;
+
+        }
+    }
+   
+   &__description{
+  color:$color-quotes;
+  font-size:1.3rem;
+    width: 100%;
+    letter-spacing: 1px;
+  
+    }
+  span {
+        color:$color-quotes;
+       
+    }
+    
+}
+
+
+
+
